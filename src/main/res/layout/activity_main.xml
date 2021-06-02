@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/palette"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#E91E63" />
+
+            <Button
+                android:id="@+id/vert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/rouge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#EA0909" />
+
+            <Button
+                android:id="@+id/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#F44336" />
+
+            <Button
+                android:id="@+id/jaune"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#FFEB3B" />
+
+            <Button
+                android:id="@+id/bleu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#3F51B5"
+                app:iconTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/mauve"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/noir"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:backgroundTint="#000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableau"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/enregistrer" />
+
+            <ImageView
+                android:id="@+id/undo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/undo" />
+
+            <ImageView
+                android:id="@+id/redo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/redo" />
+
+            <ImageView
+                android:id="@+id/remplire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/remplir" />
+
+            <ImageView
+                android:id="@+id/LTrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/largeur_trait" />
+
+            <ImageView
+                android:id="@+id/efface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/efface" />
+
+            <ImageView
+                android:id="@+id/crayon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/crayon" />
+
+            <ImageView
+                android:id="@+id/pipette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pipette" />
+
+            <ImageView
+                android:id="@+id/rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rectangle" />
+
+            <ImageView
+                android:id="@+id/triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/triangle" />
+
+            <ImageView
+                android:id="@+id/cercle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cercle" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
